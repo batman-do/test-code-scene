@@ -16,8 +16,9 @@ import nltk
 
 # import requests
 from bs4 import BeautifulSoup
-from src.fetchers import LinkContentFetcher
 from tenacity import retry, retry_if_result, stop_after_attempt, wait_random
+
+from src.fetchers import LinkContentFetcher
 
 PROXY_POOL = ["http://10.5.3.24:6210"]
 USER_AGENT_POOL = [

@@ -29,7 +29,6 @@ user_prompt_with_context = PromptTemplate(
     input_variables=["context", "question", "history", "current_time"],
 )
 
-
 user_prompt_with_no_context = """\
 In the following conversation, a human user interacts with an AI Agent. The human user poses questions, and the AI Agent goes through several steps to provide well-informed answers.
 

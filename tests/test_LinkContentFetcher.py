@@ -1,8 +1,9 @@
-import sys
 import asyncio
+import sys
+
+from src.utilities import download_files
 
 sys.path.append("../")
-from src.utilities import download_files
 
 download_files(
     [
