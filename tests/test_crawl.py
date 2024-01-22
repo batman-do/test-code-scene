@@ -1,8 +1,9 @@
-import sys
 import asyncio
+import sys
+
+from src.routers.utils import scrape
 
 sys.path.append("../")
-from src.routers.utils import scrape
 
 
 async def crawl():

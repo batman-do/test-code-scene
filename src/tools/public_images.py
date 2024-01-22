@@ -1,5 +1,5 @@
-import requests
 import cv2
+import requests
 
 
 class ImageLinker:

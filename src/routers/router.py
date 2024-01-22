@@ -3,23 +3,17 @@ import datetime
 import json
 import os
 
-import src.routers.utils as ut
-from fastapi import (
-    APIRouter,
-    BackgroundTasks,
-    File,
-    Path,
-    Query,
-    UploadFile,
-)
+from fastapi import APIRouter, BackgroundTasks, File, Path, Query, UploadFile
 from fastapi.responses import JSONResponse
+from token_throttler import TokenThrottler
+
+import src.routers.utils as ut
 from src.utilities import (
     RuntimeStorageChat,
     TokenBucketChat,
     generate_session_id,
     verify_session_id,
 )
-from token_throttler import TokenThrottler
 
 from .history import get_detail_session_id, get_history_user_id
 from .schemas import User

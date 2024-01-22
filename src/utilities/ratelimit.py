@@ -10,7 +10,6 @@ from token_throttler.storage import RuntimeStorage
 
 
 class RateLimiter(object):
-
     """Provides rate limiting for an operation with a configurable number of
     requests for a time period.
     """

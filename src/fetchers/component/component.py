@@ -1,11 +1,11 @@
-import logging
 import inspect
-from typing import Protocol, runtime_checkable, Any
-from types import new_class
+import logging
 from copy import deepcopy
+from types import new_class
+from typing import Any, Protocol, runtime_checkable
 
-from .sockets import InputSocket, OutputSocket, _empty
 from .errors import ComponentError
+from .sockets import InputSocket, OutputSocket, _empty
 
 logger = logging.getLogger(__name__)
 

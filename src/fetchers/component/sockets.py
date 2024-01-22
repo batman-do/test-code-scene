@@ -1,9 +1,8 @@
-from typing import get_args, List, Type, Any
 import logging
 from dataclasses import dataclass, field
+from typing import Any, List, Type, get_args
 
 from .types import CANALS_VARIADIC_ANNOTATION
-
 
 logger = logging.getLogger(__name__)
 
